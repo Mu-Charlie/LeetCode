@@ -64,7 +64,7 @@ public class SmallestStringWithSwaps_1202_v2 {
         }
 
         public void union(int x, int y) {
-            int rootX = find(x);
+            int rootX = find(x);//找到索引树的根节点
             int rootY = find(y);
             if (rootX == rootY) {
                 return;
